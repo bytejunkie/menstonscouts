@@ -1,4 +1,4 @@
-baseURL = 'https://menstonscoutsandguides.uk/'
+baseURL = 'https://scouts.bytejunkie.dev/'
 languageCode = 'en-us'
 title = 'Menston Scouts and Guides'
 theme = "ms-theme"
