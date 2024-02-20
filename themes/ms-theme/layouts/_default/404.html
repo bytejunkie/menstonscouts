@@ -1,0 +1,35 @@
+---
+title: "404"
+date: 2024-01-03T14:16:06Z
+draft: true
+---
+
+{{ define "main" }}
+<!-- Content for 404 page -->
+
+<div class="hero is-fullheight-with-navbar" style="background: grey url('{{ .Site.Params.BackgroundImage404 }}') no-repeat center/cover;">
+
+    <div class="hero-head">
+    <!-- Placeholder -->
+    </div>
+
+    <div class="hero-body">
+        <!-- Placeholder -->
+    </div>
+
+    <div class="hero-foot pb-2 pl-1 pr-1">
+        <div class="container has-text-">
+        <p class="title is-size-5-touch is-size-4-tablet has-text-light mb-2">
+            Sorry but the page you were searching for doesn't exist
+        </p>
+        <p class="subtitle has-text-light ">
+            <a href="{{ `` | absURL }}">
+                <button class="button is-link mb-2">
+                    <p class="is-size-6-touch">Click here to go home</p>
+                </button>
+            </a>
+        </p>
+        </div>
+    </div>
+    </div>
+{{ end }}

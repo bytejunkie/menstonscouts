@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <!-- Content for about page -->
+    <div class="container pt-3 pl-1 pr-1 pb-3">
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="columns">
+            <div class="column">
+                {{ .Content }}
+            </div>
+            <div class="column is-one-third">
+                {{ partial "totaliser.html" . }}
+            </div>
+        </div>
+    </div>
+{{ end }} 

@@ -1,0 +1,35 @@
+baseURL = 'https://menstonscoutsandguides.uk/'
+languageCode = 'en-us'
+title = 'Menston Scouts and Guides'
+theme = "ms-theme"
+paginate = 6 
+
+[params]
+    heroTitle = "Menston Scout Hut Development Fund"
+    herosubtitle = "Hero subtitle"
+    herobackgroundimage = "scouthut.png"
+    contactFormWebHook = "https://kwes.io/api/foreign/forms/xxxxxxxxxxx"
+    BackgroundImage404 = "https://source.unsplash.com/6bXvYyAYVrE"
+
+[menu]
+    [[menu.main]]
+        name = 'Home'
+        url = '/'
+        weight = 1
+    [[menu.main]]
+        name = 'News'
+        url = '/news'
+        weight = 2
+    [[menu.main]]
+        name = "About"
+        url = "/about"
+        weight = 3
+    [[menu.foot]]
+        name = "About"
+        url = "/about"
+    [[menu.foot]]
+        name = "Contact"
+        url = "/contact"
+    [[menu.foot]]
+        name = "Privacy"
+        url = "/privacy"

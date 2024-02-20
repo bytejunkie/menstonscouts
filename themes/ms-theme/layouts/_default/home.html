@@ -1,0 +1,29 @@
+{{ define "main" }}
+    <div class="hero" style="background: grey url('{{ .Site.Params.herobackgroundimage }}') no-repeat center/cover; min-height: 400px;">
+        <div class="hero-head">
+            <!-- Placeholder -->
+        </div>
+        <div class="hero-body">
+            <!-- Placeholder -->
+        </div>
+        <div class="hero-foot pb-2 pl-1">
+            <div class="container has-text-">
+            <p class="title is-size-5-touch is-size-4-tablet has-text-light">
+                {{ .Site.Params.heroTitle | markdownify}}
+            </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-3 pl-1 pr-1 pb-3">
+        <h1 class="title ">Latest News</h1>
+        <div class="columns is-multiline mt-2">
+            {{ $news := (where .Site.RegularPages "Section" "news") }}
+            {{ range (.Paginate $news 6).Pages }}
+            <div class="column is-one-third">
+                {{ partial "widgets/postcard.html" . }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

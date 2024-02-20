@@ -1,0 +1,35 @@
+<!-- <h1>{{ site.Title }}</h1> -->
+<!-- {{ partial "menu.html" (dict "menuID" "main" "page" .) }} -->
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="p-20">
+        <a class="" href="{{ `` | absURL }}">
+            <img src="/logo.png" alt="{{ .Site.Params.siteName }}">
+        </a>
+    </div>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ `` | absURL }}">
+              <h1 class="title is-size-4"><strong>{{ .Site.Params.siteName }}</strong></h1>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+        <!-- Place holder for navbar start items -->
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="navbar-item ml-05 mr-05">
+                    {{ .Name }}
+                </a>
+            {{ end }}
+        </div>
+    </div>
+  </div>
+</nav>

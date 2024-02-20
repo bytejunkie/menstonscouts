@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <div class="container pt-3 pl-1 pr-1 pb-3">
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="columns is-mobile">
+            <!-- <div class="column is-narrow">
+                <figure class="image is-48x48">
+                    <img class="is-rounded" src="{{ .Params.authorimageurl }}" alt="{{ .Params.author }}" loading="lazy">
+                </figure>
+            </div> -->
+            <div class="column">
+                <!-- <p class=""><strong>{{ .Params.authorname }}</strong></p> -->
+                <p class="">
+                    {{ partial "widgets/dateandtags.html" . }}
+                </p>
+            </div>
+        </div>
+        {{ partial "widgets/featuredimage.html" . }}
+        <div class="content has-text-grey-darker mb-3">
+            {{ .Content }}
+        </div>
+    </div>
+{{ end }}

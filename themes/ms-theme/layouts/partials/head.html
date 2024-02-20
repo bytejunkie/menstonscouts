@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
+
+<!-- Social Media Sharing -->
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+
+<!-- CSS -->
+<!-- <link rel="stylesheet" href="{{ absURL `css/bulma.min.css` }}"> -->
+<link rel="stylesheet" href="{{ absURL `css/main.css` }}">
+
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+{{ with resources.Get "sass/totaliser.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+<!-- Google Fonts -->
+<!-- Place holder for Google Fonts -->

@@ -1,0 +1,11 @@
+{{ $dateTime := .PublishDate.Format "01-Jan-06" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "01-Jan-06" }}
+<i class="fas fa-calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+| {{ with .Params.tags }}
+    {{ range . }}
+        <i class="fas fa-tag"></i>
+        {{ $href := print (absURL "tags/") (urlize .) }}
+        <a href="{{ $href }}">{{ . }}</a> |
+    {{ end }}
+{{ end }}
+Est reading time: {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} mins {{ end }}

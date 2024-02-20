@@ -1,0 +1,8 @@
+{{ $featuredImageUrl := .Params.featuredImageUrl }}
+{{ $featuredImageAltText := .Params.featuredImageAltText }}
+
+<div class="mb-1">
+    <figure class="image is-5by3 featured-img">
+        <img class="is-fluid" src="{{ $featuredImageUrl }}" alt="{{ $featuredImageAltText }}" loading="lazy">
+    </figure>
+</div>

@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="has-text-centered is-size-7-mobile">
+        {{ range .Site.Menus.foot }}
+    <a href="{{ .URL }}" title="{{ .Name }}">
+        {{ .Name }}
+    </a>
+        {{ end }}
+        {{ range .Site.Menus.taxonomy }}
+    <a href="{{ .URL }}" title="{{ .Name }}">
+        {{ .Name }}
+    </a>
+        {{ end }}
+    </div>
+</div>
+
+<p class="has-text-centered mt-5">Copyright {{ now.Year }}. All rights reserved.</p>
+
+<!-- Social Buttons for Bulma-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/c929cbc6d2.js"  crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Custom javascript -->
+<script src="{{ absURL `js/main.js` }}"></script>
+
+<script src="{{ absURL `js/totaliser.js` }}"></script>
+
