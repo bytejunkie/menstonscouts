@@ -5,7 +5,7 @@ const units = {
 
 const config = {
 	minTemp: 0,
-	maxTemp: 750,
+	maxTemp: 75,
 	unit: ""
 };
 
