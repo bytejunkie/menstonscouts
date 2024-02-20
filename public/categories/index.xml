@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Menston Scouts and Guides</title>
+    <link>https://scouts.bytejunkie.dev/categories/</link>
+    <description>Recent content in Categories on Menston Scouts and Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jan 2024 20:47:40 +0000</lastBuildDate>
+    <atom:link href="https://scouts.bytejunkie.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>category</title>
+      <link>https://scouts.bytejunkie.dev/categories/category/</link>
+      <pubDate>Sun, 21 Jan 2024 20:47:40 +0000</pubDate>
+      <guid>https://scouts.bytejunkie.dev/categories/category/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
