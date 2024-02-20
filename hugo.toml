@@ -21,9 +21,13 @@ paginate = 6
         url = '/news'
         weight = 2
     [[menu.main]]
+        name = 'Hut Devt Fund'
+        url = '/fund'
+        weight = 3
+    [[menu.main]]
         name = "About"
         url = "/about"
-        weight = 3
+        weight = 4
     [[menu.foot]]
         name = "About"
         url = "/about"
